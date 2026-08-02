@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>18505_MP_2026</title>
+  <title>18505_MP_2026B</title>
   <style>
     html, body {
       margin: 0;
@@ -176,20 +176,20 @@
 
     const items = [
       {
-        label: 'Topdown render',
-        action: () => openFile('2nd.png')
+        label: 'View draft',
+        action: () => openFile('18505_MP_2026_A3V7_8B.pdf')
       },
       {
         label: 'Topdown with draft',
         action: () => openFile('3rd.png')
       },
       {
-        label: 'Floorplan A',
-        action: () => openFile('18505_MP_2026_A3V6_8A.pdf')
+        label: 'Topdown render',
+        action: () => openFile('2nd.png')
       },
       {
-        label: 'Floorplan B',
-        action: () => openFile('18505_MP_2026_A3V7_8B.pdf')
+        label: 'Go to 18505_MP_2026A',
+        action: () => openFile('https://kemeis.github.io/18505_MP_2026A/')
       },
       {
         label: 'Credentials',
@@ -261,6 +261,7 @@
     const ang = xyzToYawPitch(point.x, point.y, point.z);
 
     console.log('----------------------------------');
+    console.log('Project: 18505_MP_2026B');
     console.log('Panorama: fin.jpeg');
     console.log(`XYZ: ${x}, ${y}, ${z}`);
     console.log(`Yaw/Pitch: ${ang.yaw}°, ${ang.pitch}°`);
